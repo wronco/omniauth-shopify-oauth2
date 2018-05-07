@@ -1,6 +1,6 @@
 require 'bundler/setup'
 require 'sinatra/base'
-require 'omniauth-shopify-oauth2'
+require 'omniauth-shopify-checkout-oauth2'
 
 SCOPE = 'read_products,read_orders,read_customers,write_shipping'
 SHOPIFY_API_KEY = ENV['SHOPIFY_API_KEY']
@@ -18,7 +18,7 @@ class App < Sinatra::Base
       <title>Shopify Oauth2</title>
     </head>
     <body>
-      <form action="/auth/shopify" method="get">
+      <form action="/auth/checkout" method="get">
       <label for="shop">Enter your store's URL:</label>
       <input type="text" name="shop" placeholder="your-shop-url.myshopify.com">
       <button type="submit">Log In</button>
