@@ -4,7 +4,7 @@ require 'omniauth/checkout/version'
 
 Gem::Specification.new do |s|
   s.name     = 'omniauth-shopify-checkout-oauth2'
-  s.version  = OmniAuth::Shopify::VERSION
+  s.version  = OmniAuth::Checkout::VERSION
   s.summary  = 'Shopify Checkout strategy for OmniAuth'
   s.homepage = 'https://github.com/wronco/omniauth-shopify-checkout-oauth2'
   s.license = 'MIT'
